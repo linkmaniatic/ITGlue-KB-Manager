@@ -1,0 +1,93 @@
+<div class='text-section scrollable'>
+<h1 id="id-b5835e19-b6cb-45c2-8d2a-1fc13dd09be8">Computer Access</h1><div>
+<div>The computers at ASH Russellville Specialty Care and ASH Hot Springs Village (HSV) are members of the ASH domain.  If a clinic requires access to these desktop PCs, they must contact ASH Information Services to set up a user account (they will need to sign some documentation before given access). ASH Information systems can also work with a clinic’s IT provider to set up remote access to clinical systems (if this is possible).  We ask the clinics to have their IT provider contact ASH Information Systems in advance to discuss.</div>
+<div><br></div>
+<h3 id="id-4bbe1fa5-12ca-4e59-ace9-5d4aab5fcfcb">Bowen Hefley Orthopedic</h3>
+<div>BH Ortho is one clinic that uses the PCs. There is a folder on the desktop of each PC labeled BH Ortho. Inside the folder are two shortcuts</div>
+<ul>
+<li>RDP Shortcut for ts.orthosurgeons.com - no VPN is needed from this site</li>
+<li>Web shortcut for their Novarad PACS system</li>
+<li>More Info on BH Ortho NOVARAD PACS: <a title="https://edafio.itglue.com/3540389/docs/8757582" href="https://edafio.itglue.com/3540389/docs/8757582" rel="noopener noreferrer" target="_blank" tabindex="-1">https://edafio.itglue.com/3540389/docs/8757582</a>
+</li>
+</ul>
+<h3 id="id-b47466d5-a6e2-4e89-a461-1aabc830858c">Martin Orthopedics</h3>
+<div>Martin Ortho is one clinic that uses the PCs. There is a folder on the desktop of each PC labeled Martin. Inside each folder are the shortcuts to their Medstrat PACS software, their EMR, and their web-based time clock application</div>
+<h1 id="id-44269167-f5f6-4a01-b9a2-4127534ea693">Clinic Wireless Access</h1>
+<p class="MsoNoSpacing"><b>Note: </b>This wireless network is intended to be used for clinic-use devices (clinic provided laptops, tablets) and <b>not</b> <b>for staff/patient personal phones and devices.</b></p>
+<p class="MsoNoSpacing"><b>Russellville Wireless SSID:</b> ASHRSVL</p>
+<p class="MsoNoSpacing"><b>Password</b>:<em> See Related Items</em></p>
+<p class="MsoNoSpacing"><b>Hot Springs Village Wireless SSID:</b> ASHHSV</p>
+<p class="MsoNoSpacing"><b>Password</b>:<em> See Related Items</em></p>
+<p class="MsoNoSpacing"><br></p>
+<h1 id="id-74ade506-bea9-403a-8971-bf99c00db6b9">Guest Wireless Access</h1>
+<p><b>Note</b>: This network is intended for use by non-clinical devices (patient phones, vendor laptops, staff personal phones, etc..)</p>
+<p class="MsoNoSpacing"><strong>SSID at both locations</strong>: guest</p>
+<p class="MsoNoSpacing"><strong>Password</strong>: <em>See Related Items</em></p>
+</div><div>
+<br><h1 id="id-26522423-2075-4a2c-a011-93eb388b9038">Phone / Fax Info</h1>
+<div><strong>Russellville Primary Phone Number</strong></div>
+<div>479-223-5060</div>
+<ul><li>This forwards to the ASH Main Hospital Referral Line</li></ul>
+<div>
+<div><strong>Hot Springs Primary Phone Number</strong></div>
+<div>501-918-0814</div>
+<ul><li>This forwards to the ASH Main Hospital Referral Line</li></ul>
+</div>
+<div><br></div>
+<div><strong>Fax Info</strong></div>
+<div><br></div>
+<div>Russellville Fax Number: 479-219-5427</div>
+<div>Connected to the Lexmark MFP Printer at the nurse station</div>
+<div><br></div>
+<div><br></div>
+<h1 id="id-5e998029-f36a-4fed-915a-b5c6983be076">Clinic Rotation Information</h1>
+<div>See the attached Excel sheet for the clinic schedule. This schedule is subject to change and is managed by Rebecca Jones. </div>
+</div>
+</div>
+
+<div class='text-section scrollable'>
+<h1 id="id-bfac84ca-ba74-4381-8f56-bd204264f1ba">Bowen Hefley Ortho Remote Scan</h1><div><br></div><div>BH Ortho uses the application Remote Scan by Quest to map the local scanners on their front desk computers in Russellville and Hot Spring Village.  This allows you to map USB scanners to Remote Desktop sessions that have the Remote Scan client installed. At this time it is primarily used for BH Ortho to connect to their RDS server ts.orthosurgeons.com.</div><div><br></div><h2 id="id-77291f9c-6213-48cb-b885-1596cb05cac8">Troubleshooting</h2><div>More Info on the application and troubleshooting info can be found in this document: <a href="https://edafio.itglue.com/3540389/docs/6086257">https://edafio.itglue.com/3540389/docs/6086257</a>
+</div><div>
+<br><div>RemoteScan server is licensed per MAC address, and is managed in the Quest software portal account tied to <a href="mailto:orders@edafio.com">orders@edafio.com</a></div>
+<div><br></div>
+<div>URL: <a href="https://www.remote-scan.com/customer/index.php">https://www.remote-scan.com/customer/index.php</a></div>
+</div>
+</div>
+
+<div class='text-section scrollable'>
+<h1 id="id-a6b3c994-93bc-4d20-afa6-a694af1e4aed">Troubleshooting Help</h1><h3 id="id-5b8517de-4c2b-4162-8705-4d78ec2bbf5a">Bowen Hefley Orthopedic Unable to Send Studies to their PACS Server</h3><div>
+<p><span style="color:#ff0000;">Problem – Users from BH Ortho Report issues sending studies from ASH Specialty Clinic (in Hot Springs or Russellville) to the BH Ortho PACS system</span></p>
+<p>Troubleshooting</p>
+<ul>
+<li>First find if the user is in Hot Springs Village or Russellville</li>
+<li>Connect to the end user’s machine, and launch a CMD session</li>
+<li>Attempt to pint the BH Ortho PACS Server: 192.168.230.228</li>
+<li>If you cannot ping the server you will need to restart the ASH Clinic &lt;&gt; BH Ortho VPN Tunnel</li>
+</ul>
+<p>Restarting the Site to Site VPN Tunnel</p>
+<ul>
+<li>Sign in to the ASH Specialty Clinic Firewall via the web<ul>
+<li>ASH Russellville CheckPoint 750: <a href="https://edafio.itglue.com/3540406/passwords/17131755">https://edafio.itglue.com/3540406/passwords/17131755</a>
+</li>
+<li>ASH Hot Springs Village CheckPoint 750: <a href="https://edafio.itglue.com/3540406/passwords/17131756" class="linkified" target="_blank">https://edafio.itglue.com/3540406/passwords/17131756</a>
+</li>
+</ul>
+</li>
+<li>In the admin page navigate to VPN &gt; Site to Site &gt; VPN Sites<ul>
+<li>Highlight the Bowen Hefley Tunnel (remote IP Is 12.14.28.210)</li>
+<li>Click on Disable to stop the tunnel</li>
+</ul>
+</li>
+</ul>
+<p><img src="3540406/docs/5358941/images/15353487" alt="Graphical user interface, application, website
+
+Description automatically generated" class="" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<ul><li>After 10 seconds Highlight the tunnel again and click on Enable</li></ul>
+<p><img src="3540406/docs/5358941/images/15353488" alt="Graphical user interface, application, website
+
+Description automatically generated" class="" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p><br></p>
+<p>Have the end user attempt to send studies again.</p>
+</div><div><br></div>
+</div>
+
